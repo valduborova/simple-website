@@ -1,0 +1,20 @@
+{% extends 'default.html' %}
+
+{% block title %}
+{{rec.title}}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>{{rec.title}}</h1>
+    <div class="alert alert-info">
+        {% if rec.date %}
+        <p>Дата: {{ rec.date }}</p>
+        {% endif %}
+        <p>{{ rec.intro }}</p>
+        <p>{{ rec.text }}</p>
+        <a href="/posts/{{ rec.id }}/update" class="btn btn-primary">Редактировать</a>
+        <a href="/posts/{{ rec.id }}/delete" class="btn btn-danger">Удалить</a>
+    </div>
+</div>
+{% endblock %}

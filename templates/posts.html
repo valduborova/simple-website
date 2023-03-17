@@ -1,0 +1,34 @@
+{% extends 'default.html' %}
+
+{% block title %}
+Статьи
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Статьи</h1>
+        {% if res|length > 0 %}
+        <div class="row row-cols-2 row-cols-md-3 g-4">
+            {% for rec in res %}
+             <div class="col"><div class="card text-bg-light h-100">
+                 <div class="card-header">
+                    <ul class="nav nav-pills card-header-pills">
+                      <li class="nav-item">
+                          <h5><a class="nav-link" href="/posts/{{rec.id}}">{{ rec.title }}</a></h5>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">{{ rec.date }}</a>
+                      </li>
+                    </ul>
+                 </div>
+                 <div class="card-body">
+                     <p class="card-text">{{ rec.intro }}</p>
+                 </div>
+             </div></div>
+            {% endfor %}
+        </div>
+            {% else %}
+            <p>У нас ещё нет статей на сайте</p>
+            {% endif %}
+    </div>
+{% endblock %}
