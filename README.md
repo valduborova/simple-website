@@ -9,4 +9,4 @@ You can add, update and delete articles. All of them are stored in database.
 
 <img width="1512" alt="Снимок экрана 2023-03-18 в 00 09 00" src="https://user-images.githubusercontent.com/106841889/226050728-de4384a8-aab8-4989-9d46-20ab18d582a7.png">
 
-![Uploading Снимок экрана 2023-03-18 в 00.09.18.png…]()
+<img width="1512" alt="Снимок экрана 2023-03-18 в 00 09 18" src="https://user-images.githubusercontent.com/106841889/226056136-84b6947b-b572-4c61-ad18-889e61a6a744.png">
