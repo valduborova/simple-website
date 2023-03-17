@@ -36,7 +36,7 @@ def update_article(id):
         try:
             db.commit()
             db.close()
-            return redirect('/posts/<int:id>')
+            return redirect('/posts')
         except:
             return 'При редактировании статьи произошла ошибка'
     else:
